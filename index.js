@@ -15,11 +15,11 @@ module.exports = async (contentBuffer, { customPdfjs } = {}) => {
     pdfjsAPI = customPdfjs
   }
 
-  const doc = await pdfjsAPI.getDocument(contentBuffer)
+  const doc = await pdfjsAPI.getDocument(contentBuffer).promise
 
   const result = { pages: [] }
 
-  for (let i = 1; i < doc.pdfInfo.numPages + 1; i++) {
+  for (let i = 1; i < doc.numPages + 1; i++) {
     result.pages.push({
       text: await getPageText(i, doc)
     })

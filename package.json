@@ -1,6 +1,6 @@
 {
   "name": "parse-pdf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get text content and metadata about pdf",
   "main": "index.js",
   "homepage": "https://github.com/bjrmatos/parse-pdf",
@@ -33,7 +33,7 @@
     "node": ">=8.9"
   },
   "dependencies": {
-    "pdfjs-dist": "2.0.489"
+    "pdfjs-dist": "2.16.105"
   },
   "devDependencies": {
     "babel-eslint": "8.2.3",
