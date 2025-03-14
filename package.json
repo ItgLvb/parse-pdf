@@ -1,13 +1,14 @@
 {
   "name": "parse-pdf",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Get text content and metadata about pdf",
-  "main": "index.js",
+  "main": "index.mjs",
   "homepage": "https://github.com/bjrmatos/parse-pdf",
   "repository": {
     "type": "git",
     "url": "git@github.com:bjrmatos/parse-pdf.git"
   },
+  "type": "module",
   "keywords": [
     "pdfjs",
     "pdf",
@@ -26,21 +27,21 @@
     }
   },
   "scripts": {
-    "test": "mocha --timeout 5000 test/test.js"
+    "test": "mocha --timeout 5000 test/test.mjs"
   },
   "license": "MIT",
   "engines": {
-    "node": ">=8.9"
+    "node": ">=22"
   },
   "dependencies": {
-    "pdfjs-dist": "2.0.489"
+    "pdfjs-dist": "4.10.38"
   },
   "devDependencies": {
     "babel-eslint": "8.2.3",
-    "eslint": "4.19.1",
+    "eslint": "9.22.0",
     "eslint-plugin-babel": "5.1.0",
-    "mocha": "5.1.1",
+    "mocha": "10.8.2",
     "should": "13.2.1",
-    "standard": "11.0.1"
+    "standard": "17.1.2"
   }
 }
